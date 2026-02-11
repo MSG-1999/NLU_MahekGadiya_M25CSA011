@@ -1,0 +1,300 @@
+
+_____________________________________________________________________________________________________________________________
+
+1) Different date formats
+_____________________________________________________________________________________________________________________________
+
+========== RUN 1 ========== (dd-mm-yyy)
+
+Reggy++: Hello. My name is Reggy++.
+Reggy++: Please enter your full name.
+You: Mahek Gadiya
+Reggy++: Thanks, Mahek. Your surname appears to be Gadiya.
+Reggy++: Enter your date of birth.
+You: 20/12/2004
+Reggy++: You are 21 years old.
+Reggy++: How are you feeling today?
+You: happi
+Reggy++: Glad to hear that.
+Reggy++: Conversation ended.
+------------------------
+Reggy++: Do you want to talk again? (yes/no)
+You: yes
+
+========== RUN 2 ==========(mm-dd-yyy)
+
+Reggy++: Hello. My name is Reggy++.
+Reggy++: Please enter your full name.
+You: Dhruv
+Reggy++: Thanks, Dhruv. Your surname appears to be Dhruv.
+Reggy++: Enter your date of birth.
+You: 20-12-2004
+Reggy++: You are 21 years old.
+Reggy++: How are you feeling today?
+You: sad
+Reggy++: Sorry to hear that.
+Reggy++: Conversation ended.
+------------------------
+Reggy++: Do you want to talk again? (yes/no)
+You: yes
+
+========== RUN 3 ==========(dd Mon yyyy)
+
+Reggy++: Hello. My name is Reggy++.
+Reggy++: Please enter your full name.
+You: Mahek Shankesh Gadiya
+Reggy++: Thanks, Mahek. Your surname appears to be Gadiya.
+Reggy++: Enter your date of birth.
+You: 05 oct 1999
+Reggy++: You are 26 years old.
+Reggy++: How are you feeling today?
+You: good
+Reggy++: Glad to hear that.
+Reggy++: Conversation ended.
+------------------------
+Reggy++: Do you want to talk again? (yes/no)
+You: yes
+
+========== RUN 4 ==========(dd Month yyyy)
+
+Reggy++: Hello. My name is Reggy++.
+Reggy++: Please enter your full name.
+You: Aryan Mutha
+Reggy++: Thanks, Aryan. Your surname appears to be Mutha.
+Reggy++: Enter your date of birth.
+You: 27 february 2008
+Reggy++: You are 17 years old.
+Reggy++: How are you feeling today?
+You: happi
+Reggy++: Glad to hear that.
+Reggy++: Conversation ended.
+------------------------
+Reggy++: Do you want to talk again? (yes/no)
+You: yes
+
+_____________________________________________________________________________________________________________________________
+
+2) Different moodexpressions (including typos)
+_____________________________________________________________________________________________________________________________
+
+========== RUN 5 ========== Positive mood with typo
+
+Reggy++: Hello. My name is Reggy++.
+Reggy++: Please enter your full name.
+You: Jiyana Vicky Gadiya
+Reggy++: Thanks, Jiyana. Your surname appears to be Gadiya.
+Reggy++: Enter your date of birth.
+You: 17 May 2023
+Reggy++: You are 2 years old.
+Reggy++: How are you feeling today?
+You: very happieee
+Reggy++: Glad to hear that.
+Reggy++: Conversation ended.
+------------------------
+Reggy++: Do you want to talk again? (yes/no)
+You: yes
+
+========== RUN 6 ========== negative modd with typo
+
+Reggy++: Hello. My name is Reggy++.
+Reggy++: Please enter your full name.
+You: Naisha Jain
+Reggy++: Thanks, Naisha. Your surname appears to be Jain.
+Reggy++: Enter your date of birth.
+You: 19 Aug 2018
+Reggy++: You are 7 years old.
+Reggy++: How are you feeling today?
+You: angr
+Reggy++: Sorry to hear that.
+Reggy++: Conversation ended.
+------------------------
+Reggy++: Do you want to talk again? (yes/no)
+You: yes
+
+========== RUN 7 ==========(Mixed Mood - Ambiguous)
+
+Reggy++: Hello. My name is Reggy++.
+Reggy++: Please enter your full name.
+You: Hastimal Gadiya
+Reggy++: Thanks, Hastimal. Your surname appears to be Gadiya.
+Reggy++: Enter your date of birth.
+You: 12/03/1965
+Reggy++: Your date is ambiguous.
+Reggy++: Enter 'dd' for day-month-year or 'mm' for month-day-year.
+You: mm
+Reggy++: You are 60 years old.
+Reggy++: How are you feeling today?
+You: happy and sad
+Reggy++: its Ambigous.
+Reggy++: You seem to have mixed feelings.
+Reggy++: Conversation ended.
+------------------------
+Reggy++: Do you want to talk again? (yes/no)
+You: no
+Reggy++: Goodbye!
+
+
+_____________________________________________________________________________________________________________________________
+
+3) Ambiguous case :
+_____________________________________________________________________________________________________________________________
+
+========== RUN 8 ========== (Ambiguous_DOB & Recovery)
+
+Reggy++: Hello. My name is Reggy++.
+Reggy++: Please enter your full name.
+You: Mahek Gadiya
+Reggy++: Thanks, Mahek. Your surname appears to be Gadiya.
+Reggy++: Enter your date of birth.
+You: 05-10-1999
+Reggy++: Your date is ambiguous.
+Reggy++: Enter 'dd' for day-month-year or 'mm' for month-day-year.
+You: dd
+Reggy++: You are 26 years old.
+Reggy++: How are you feeling today?
+You: sad
+Reggy++: Sorry to hear that.
+Reggy++: Conversation ended.
+------------------------
+Reggy++: Do you want to talk again? (yes/no)
+You: Shankesh Babulal Gadiya
+Reggy++: Goodbye!
+
+
+========== RUN 9 ==========(Ambiguous_DOB & Recovery)
+
+Reggy++: Hello. My name is Reggy++.
+Reggy++: Please enter your full name.
+You: Param Oswal
+Reggy++: Thanks, Param. Your surname appears to be Oswal.
+Reggy++: Enter your date of birth.
+You: 03/03/2011
+Reggy++: Your date is ambiguous.
+Reggy++: Enter 'dd' for day-month-year or 'mm' for month-day-year.
+You: dd
+Reggy++: You are 14 years old.
+Reggy++: How are you feeling today?
+You: sad
+Reggy++: Sorry to hear that.
+Reggy++: Conversation ended.
+------------------------
+Reggy++: Do you want to talk again? (yes/no)
+You: yes
+
+____________________________________________________________________________________________________________________________
+
+4) Fail case :
+____________________________________________________________________________________________________________________________
+
+========== RUN 10 ==========(invalid full name & Recovery)
+
+Reggy++: Hello. My name is Reggy++.
+Reggy++: Please enter your full name.
+You: 
+Reggy++: Name cannot be empty. Please try again.
+You: 123
+Reggy++: Name should contain alphabets only. Please enter again.
+You: ###
+Reggy++: Name should contain alphabets only. Please enter again.
+You: )__)
+Reggy++: Name should contain alphabets only. Please enter again.
+You: Rakesh Mutha
+Reggy++: Thanks, Rakesh. Your surname appears to be Mutha.
+Reggy++: Enter your date of birth.
+You: 05/21/1985
+Reggy++: You are 40 years old.
+Reggy++: How are you feeling today?
+You: happi
+Reggy++: Glad to hear that.
+Reggy++: Conversation ended.
+------------------------
+Reggy++: Do you want to talk again? (yes/no)
+You: no
+Reggy++: Goodbye!
+
+
+========== RUN 11 ==========(Fail invalid_DOB & Recovery)
+
+Reggy++: Hello. My name is Reggy++.
+Reggy++: Please enter your full name.
+You: Shankesh Babulal Gadiya
+Reggy++: Thanks, Shankesh. Your surname appears to be Gadiya.
+Reggy++: Enter your date of birth.
+You: 27/40/1999 
+Reggy++: Invalid date format,please try again 
+Reggy++: Allowed formats: dd-mm-yyyy, mm-dd-yy, dd/mm/yy, dd Mon yyyy
+Reggy++: Day Range [01-31], Month Range:[1-12].
+
+Regg++: Please enter a valid date.
+You: 27/03/1975
+Reggy++: You are 50 years old.
+Reggy++: How are you feeling today?
+You: i am feeling very happy
+Reggy++: Glad to hear that.
+Reggy++: Conversation ended.
+------------------------
+Reggy++: Do you want to talk again? (yes/no)
+You: no
+Reggy++: Goodbye!
+
+========== RUN 12 ==========(Fail unseen_mood & Recovery)
+
+Reggy++: Hello. My name is Reggy++.
+Reggy++: Please enter your full name.
+You: 1234m
+Reggy++: Thanks, m. Your surname appears to be m.
+Reggy++: Enter your date of birth.
+You: 05 oct 1999
+Reggy++: You are 26 years old.
+Reggy++: How are you feeling today?
+You: hi
+Reggy++: I could not understand that. Please enter your mood like
+Reggy++: happy, good, fine, ok, sad, tired, angry, stress
+You: my mood is not matching with above
+Reggy++: I could not understand that. Please enter your mood like
+Reggy++: happy, good, fine, ok, sad, tired, angry, stress
+You: angryiiiii
+Reggy++: Sorry to hear that.
+Reggy++: Conversation ended.
+------------------------
+Reggy++: Do you want to talk again? (yes/no)
+You: no
+Reggy++: Goodbye!
+_____________________________________________________________________________________________________________________________
+
+5) Combined: Fail (invalid date) + Ambiguous(DOB) + Unseen_mood + Recovery
+_____________________________________________________________________________________________________________________________
+
+========== RUN 13 ==========
+
+Reggy++: Hello. My name is Reggy++.
+Reggy++: Please enter your full name.
+You: Rakesh Mutha
+Reggy++: Thanks, Rakesh. Your surname appears to be Mutha.
+Reggy++: Enter your date of birth.
+You: 
+Reggy++: Invalid date format,please try aain
+Reggy++: Allowed formats: dd-mm-yyyy, mm-dd-yy, dd/mm/yy, dd Mon yyyy
+Reggy++: Day Range [01-31], Month Range:[1-12].
+
+Regg++: Please enter a valid date.
+You: 05/10/1999
+Reggy++: Your date is ambiguous.
+Reggy++: Enter 'dd' for day-month-year or 'mm' for month-day-year.
+You: mm
+Reggy++: You are 26 years old.
+Reggy++: How are you feeling today?
+You: 
+Reggy++: I could not understand that. Please enter your mood like
+Reggy++: happy, good, fine, ok, sad, tired, angry, stress
+You: great
+Reggy++: I could not understand that. Please enter your mood like
+Reggy++: happy, good, fine, ok, sad, tired, angry, stress
+You: feeling stress
+Reggy++: Sorry to hear that.
+Reggy++: Conversation ended.
+------------------------
+Reggy++: Do you want to talk again? (yes/no)
+You: no
+Reggy++: Goodbye!
+

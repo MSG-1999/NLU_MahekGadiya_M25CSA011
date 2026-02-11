@@ -1,0 +1,35 @@
+Reflection on Naturalness of Reggy++
+
+1) Reggy++ is a simple chatbot built using regular expressions and basic string processing techniques.
+   While interacting with the chatbot, the conversation feels structured and rule-based rather than natural.
+
+2) The chatbot follows a fixed order of interaction by asking for the user’s name, date of birth, and mood one
+   after another. Because of this fixed flow, the conversation is easy to understand, but it does not feel like
+   a real human conversation.
+
+3) One major strength of Reggy++ is that its behavior is easy to explain. Since the chatbot works using predefined
+   regex patterns, it is always clear why a specific response is produced.
+
+4) The chatbot can correctly handle different date formats such as dd-mm-yyyy, mm-dd-yy, dd/mm/yy, and dates written
+   using month names. When an ambiguous date like 03-04-02 is entered, the chatbot asks the user to clarify the format,
+   which helps avoid incorrect age calculation.Age calculation is reliable because the chatbot directly compares the 
+   user’s date of birth with the current date.
+
+5) Another strength of Reggy++ is its simplicity. It does not use any external libraries or machine learning models and
+   runs using only Python’s standard library. The chatbot gives consistent responses for the same input every time, which
+   is useful in rule-based systems. Reggy++ can handle small spelling mistakes in mood inputs such as “happi” or “tirred” 
+   using partial keyword matching.
+
+6) Input validation is applied at different stages, such as checking if the name contains alphabets and validating date ranges,
+   which prevents runtime errors.
+
+7) However, the chatbot has several limitations. It cannot understand natural language expressions like “yesterday” or “last Monday”.
+   Mood detection is limited to a fixed set of keywords, so informal or unknown expressions like “meh” are not handled properly.
+   Although mixed emotions such as “sad and happy” are detected, the chatbot’s response is still very basic.
+
+8) The chatbot lacks contextual understanding and cannot handle flexible conversation flows.
+
+9) Overall, Reggy++ works well for structured inputs but does not feel very natural.
+
+10) From this experiment, I learned that regex-based chatbots are useful for simple tasks but are limited when compared to modern
+    machine learning-based conversational systems.
