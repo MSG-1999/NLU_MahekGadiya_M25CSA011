@@ -6,7 +6,7 @@
 # Name : Mahek Gadiya
 # Roll : M25CSA011
 # Subject : Natural Language Understanding
-# Problem : 4  --> News Classification (SPORTS vs POLITICS)
+# Problem : 4 --> News Classification (SPORTS vs POLITICS)
 # ============================================================
 
 
