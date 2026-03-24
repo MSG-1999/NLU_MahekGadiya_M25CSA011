@@ -1,0 +1,427 @@
+
+=== 2026-03-24 23:17:17 ===
+
+[rnn.py]  Device: cuda  |  Log: logs/training_log.txt
+
+Loaded 1000 full names  →  1000 unique full names
+Full-name vocab: 29  (includes space character)
+
+=======================================================
+  TASK 1 — Vanilla RNN  (single full-name model)
+=======================================================
+
+Vanilla RNN  |  vocab=29  |  223,325 trainable parameters
+
+=======================================================
+  Vanilla RNN  |  223,325 params
+  Opt: Adam  Sched: ReduceLROnPlateau  Epochs: 80  Patience: 12
+=======================================================
+    Ep      Loss          LR   Pat
+  -----------------------------------
+     1    2.5035    0.001000     0 *
+     2    2.0359    0.001000     0 *
+     3    1.8501    0.001000     0 *
+     4    1.7092    0.001000     0 *
+     5    1.5795    0.001000     0 *
+     6    1.4559    0.001000     0 *
+     7    1.3527    0.001000     0 *
+     8    1.2765    0.001000     0 *
+     9    1.2106    0.001000     0 *
+    10    1.1432    0.001000     0 *
+    11    1.1117    0.001000     0 *
+    12    1.0694    0.001000     0 *
+    13    1.0385    0.001000     0 *
+    14    1.0133    0.001000     0 *
+    15    0.9829    0.001000     0 *
+    16    0.9614    0.001000     0 *
+    17    0.9410    0.001000     0 *
+    18    0.9254    0.001000     0 *
+    19    0.9229    0.001000     0 *
+    20    0.9075    0.001000     0 *
+    21    0.8949    0.001000     0 *
+    22    0.8827    0.001000     0 *
+    23    0.8806    0.001000     0 *
+    24    0.8692    0.001000     0 *
+    25    0.8643    0.001000     0 *
+    26    0.8600    0.001000     0 *
+    27    0.8526    0.001000     0 *
+    28    0.8499    0.001000     0 *
+    29    0.8477    0.001000     0 *
+    30    0.8399    0.001000     0 *
+    31    0.8386    0.001000     0 *
+    32    0.8300    0.001000     0 *
+    33    0.8251    0.001000     0 *
+    34    0.8251    0.001000     1
+    35    0.8229    0.001000     0 *
+    36    0.8237    0.001000     1
+    37    0.8215    0.001000     0 *
+    38    0.8182    0.001000     0 *
+    39    0.8067    0.001000     0 *
+    40    0.8128    0.001000     1
+    41    0.8097    0.001000     2
+    42    0.8084    0.001000     3
+    43    0.8099    0.001000     4
+    44    0.8041    0.001000     0 *
+    45    0.8032    0.001000     0 *
+    46    0.8034    0.001000     1
+    47    0.7976    0.001000     0 *
+    48    0.7962    0.001000     0 *
+    49    0.7946    0.001000     0 *
+    50    0.7966    0.001000     1
+    51    0.7900    0.001000     0 *
+    52    0.7925    0.001000     1
+    53    0.7891    0.001000     0 *
+    54    0.7845    0.001000     0 *
+    55    0.7861    0.001000     1
+    56    0.7855    0.001000     2
+    57    0.7847    0.001000     3
+    58    0.7874    0.001000     4
+    59    0.7804    0.001000     0 *
+    60    0.7795    0.001000     0 *
+    61    0.7818    0.001000     1
+    62    0.7776    0.001000     0 *
+    63    0.7811    0.001000     1
+    64    0.7746    0.001000     0 *
+    65    0.7781    0.001000     1
+    66    0.7747    0.001000     2
+    67    0.7722    0.001000     0 *
+    68    0.7679    0.001000     0 *
+    69    0.7801    0.001000     1
+    70    0.7696    0.001000     2
+    71    0.7733    0.001000     3
+    72    0.7693    0.001000     4
+    73    0.7665    0.001000     0 *
+    74    0.7693    0.001000     1
+    75    0.7616    0.001000     0 *
+    76    0.7609    0.001000     0 *
+    77    0.7618    0.001000     1
+    78    0.7587    0.001000     0 *
+    79    0.7626    0.001000     1
+    80    0.7598    0.001000     2
+  Best: 0.7587  →  models/vanilla_rnn.pt
+
+
+Loss history → loss_rnn.json
+
+✓ rnn.py done.  Model: models/vanilla_rnn.pt
+ 
+ Run blstm.py 
+
+
+=== 2026-03-24 23:18:50 ===
+
+[blstm.py]  Device: cuda  |  Log: logs/training_log.txt
+
+Loaded 1000 full names  →  1000 unique full names
+Full-name vocab: 29  (includes space character)
+
+=======================================================
+  TASK 1 — BLSTM  (single full-name model)
+=======================================================
+
+BLSTM  |  vocab=29  |  865,885 trainable parameters
+
+=======================================================
+  BLSTM  |  865,885 params
+  Opt: RMSprop  Sched: ReduceLROnPlateau  Epochs: 80  Patience: 12
+=======================================================
+    Ep      Loss          LR   Pat
+  -----------------------------------
+     1    2.8959    0.001000     0 *
+     2    2.5384    0.001000     0 *
+     3    2.3352    0.001000     0 *
+     4    2.1792    0.001000     0 *
+     5    2.0590    0.001000     0 *
+     6    1.9612    0.001000     0 *
+     7    1.8575    0.001000     0 *
+     8    1.7704    0.001000     0 *
+     9    1.7010    0.001000     0 *
+    10    1.6569    0.001000     0 *
+    11    1.6150    0.001000     0 *
+    12    1.5529    0.001000     0 *
+    13    1.5352    0.001000     0 *
+    14    1.5121    0.001000     0 *
+    15    1.4763    0.001000     0 *
+    16    1.4563    0.001000     0 *
+    17    1.4492    0.001000     0 *
+    18    1.4325    0.001000     0 *
+    19    1.4131    0.001000     0 *
+    20    1.3977    0.001000     0 *
+    21    1.3885    0.001000     0 *
+    22    1.3724    0.001000     0 *
+    23    1.3588    0.001000     0 *
+    24    1.3504    0.001000     0 *
+    25    1.3434    0.001000     0 *
+    26    1.3170    0.001000     0 *
+    27    1.3159    0.001000     0 *
+    28    1.3076    0.001000     0 *
+    29    1.3057    0.001000     0 *
+    30    1.2829    0.001000     0 *
+    31    1.2908    0.001000     1
+    32    1.2928    0.001000     2
+    33    1.2674    0.001000     0 *
+    34    1.2597    0.001000     0 *
+    35    1.2585    0.001000     0 *
+    36    1.2494    0.001000     0 *
+    37    1.2482    0.001000     0 *
+    38    1.2280    0.001000     0 *
+    39    1.2468    0.001000     1
+    40    1.2248    0.001000     0 *
+    41    1.2227    0.001000     0 *
+    42    1.2190    0.001000     0 *
+    43    1.2126    0.001000     0 *
+    44    1.2047    0.001000     0 *
+    45    1.2159    0.001000     1
+    46    1.1949    0.001000     0 *
+    47    1.2119    0.001000     1
+    48    1.1881    0.001000     0 *
+    49    1.1914    0.001000     1
+    50    1.1865    0.001000     0 *
+    51    1.1802    0.001000     0 *
+    52    1.1799    0.001000     0 *
+    53    1.1757    0.001000     0 *
+    54    1.1727    0.001000     0 *
+    55    1.1712    0.001000     0 *
+    56    1.1738    0.001000     1
+    57    1.1646    0.001000     0 *
+    58    1.1719    0.001000     1
+    59    1.1460    0.001000     0 *
+    60    1.1622    0.001000     1
+    61    1.1572    0.001000     2
+    62    1.1449    0.001000     0 *
+    63    1.1438    0.001000     0 *
+    64    1.1504    0.001000     1
+    65    1.1587    0.001000     2
+    66    1.1429    0.001000     0 *
+    67    1.1347    0.001000     0 *
+    68    1.1398    0.001000     1
+    69    1.1348    0.001000     2
+    70    1.1348    0.001000     3
+    71    1.1317    0.001000     0 *
+    72    1.1306    0.001000     0 *
+    73    1.1316    0.001000     1
+    74    1.1303    0.001000     0 *
+    75    1.1247    0.001000     0 *
+    76    1.1207    0.001000     0 *
+    77    1.1263    0.001000     1
+    78    1.1290    0.001000     2
+    79    1.1192    0.001000     0 *
+    80    1.1104    0.001000     0 *
+  Best: 1.1104  →  models/blstm.pt
+
+
+Loss history → loss_blstm.json
+
+✓ blstm.py done.  Model: models/blstm.pt
+ 
+ Run rnn_att.py 
+
+
+=== 2026-03-24 23:20:35 ===
+
+[rnn_att.py]  Device: cuda  |  Log: logs/training_log.txt
+
+Loaded 1000 full names  →  1000 unique full names
+Full-name vocab: 29  (includes space character)
+
+=======================================================
+  TASK 1 — RNN + Attention  (single full-name model)
+=======================================================
+
+RNN+Attention  |  vocab=29  |  363,101 trainable parameters
+
+=======================================================
+  RNN+Attention  |  363,101 params
+  Opt: Adam  Sched: CosineAnnealingLR  Epochs: 80  Patience: 12
+=======================================================
+    Ep      Loss          LR   Pat
+  -----------------------------------
+     1    2.3119    0.000998     0 *
+     2    1.9001    0.000999     0 *
+     3    1.7382    0.000999     0 *
+     4    1.5843    0.000999     0 *
+     5    1.4424    0.000999     0 *
+     6    1.3128    0.000999     0 *
+     7    1.2259    0.000999     0 *
+     8    1.1389    0.001000     0 *
+     9    1.0798    0.001000     0 *
+    10    1.0318    0.001000     0 *
+    11    0.9986    0.001000     0 *
+    12    0.9731    0.001000     0 *
+    13    0.9448    0.001000     0 *
+    14    0.9240    0.001000     0 *
+    15    0.9067    0.001000     0 *
+    16    0.8905    0.001000     0 *
+    17    0.8810    0.001000     0 *
+    18    0.8687    0.001000     0 *
+    19    0.8687    0.001000     1
+    20    0.8633    0.001000     0 *
+    21    0.8568    0.001000     0 *
+    22    0.8466    0.001000     0 *
+    23    0.8483    0.001000     1
+    24    0.8349    0.001000     0 *
+    25    0.8270    0.001000     0 *
+    26    0.8262    0.001000     0 *
+    27    0.8201    0.001000     0 *
+    28    0.8146    0.001000     0 *
+    29    0.8111    0.001000     0 *
+    30    0.8076    0.001000     0 *
+    31    0.8081    0.001000     1
+    32    0.8083    0.001000     2
+    33    0.7993    0.001000     0 *
+    34    0.7931    0.001000     0 *
+    35    0.7908    0.001000     0 *
+    36    0.7922    0.001000     1
+    37    0.7894    0.001000     0 *
+    38    0.7814    0.001000     0 *
+    39    0.7821    0.001000     1
+    40    0.7793    0.001000     0 *
+    41    0.7802    0.001000     1
+    42    0.7799    0.001000     2
+    43    0.7755    0.001000     0 *
+    44    0.7714    0.001000     0 *
+    45    0.7634    0.001000     0 *
+    46    0.7696    0.001000     1
+    47    0.7608    0.001000     0 *
+    48    0.7595    0.001000     0 *
+    49    0.7610    0.001000     1
+    50    0.7564    0.001000     0 *
+    51    0.7592    0.001000     1
+    52    0.7631    0.001000     2
+    53    0.7579    0.001000     3
+    54    0.7610    0.001000     4
+    55    0.7484    0.001000     0 *
+    56    0.7529    0.001000     1
+    57    0.7463    0.001000     0 *
+    58    0.7522    0.001000     1
+    59    0.7410    0.001000     0 *
+    60    0.7452    0.001000     1
+    61    0.7425    0.001000     2
+    62    0.7379    0.001000     0 *
+    63    0.7442    0.001000     1
+    64    0.7398    0.001000     2
+    65    0.7348    0.001000     0 *
+    66    0.7365    0.001000     1
+    67    0.7367    0.001000     2
+    68    0.7362    0.001000     3
+    69    0.7344    0.001000     0 *
+    70    0.7437    0.001000     1
+    71    0.7279    0.001000     0 *
+    72    0.7318    0.001000     1
+    73    0.7281    0.001000     2
+    74    0.7294    0.001000     3
+    75    0.7228    0.001000     0 *
+    76    0.7209    0.001000     0 *
+    77    0.7248    0.001000     1
+    78    0.7205    0.001000     0 *
+    79    0.7237    0.001000     1
+    80    0.7186    0.001000     0 *
+  Best: 0.7186  →  models/rnn_attention.pt
+
+
+Loss history → loss_rnn_att.json
+
+✓ rnn_att.py done.  Model: models/rnn_attention.pt
+ 
+ 
+ Now  Run eval.py for generation, novelty & diversity metrics.
+
+
+=== 2026-03-24 23:26:03 ===
+
+[eval.py]  Device: cuda  |  Log: logs/training_log.txt
+
+Loaded 1000 full names  →  1000 unique full names
+Full-name vocab: 29  (includes space character)
+
+==========================================================
+  TASK 1 - Model Parameter Counts
+==========================================================
+  Vanilla RNN                 223,325  single model (full names)
+  BLSTM                       865,885  single model (full names)
+  RNN+Attention               363,101  single model (full names)
+
+Loading saved model checkpoints ...
+  OK  models/vanilla_rnn.pt
+  OK  models/blstm.pt
+  OK  models/rnn_attention.pt
+
+Loading loss histories ...
+  OK  loss_rnn.json  (80 epochs)
+  OK  loss_blstm.json  (80 epochs)
+  OK  loss_rnn_att.json  (80 epochs)
+  Saved -> loss_histories.json
+
+==========================================================
+  TASK 2 - QUANTITATIVE EVALUATION
+==========================================================
+
+  [Vanilla RNN]  (200 names generated)
+    Novelty Rate : 82.0%
+    Diversity    : 0.980
+    Sample (15)  : ['Sachin Hegde', 'Mira Radeuty', 'Anjkli Menon', 'Chitra Sheikh', 'Mahen Dwivedi', 'Pankaj Kurkr', 'Zoya Mehty', 'Jyoti Bose', 'Nihini Siddiqui', 'Anita Sneti', 'Yuvraj Mishra', 'Tanmay Chatterjee', 'Uday Khanna', 'Alika Bhoudhary', 'Sanya Deshpande']
+
+  [BLSTM]  (200 names generated)
+    Novelty Rate : 95.5%
+    Diversity    : 0.995
+    Sample (15)  : ['Eajta Kqmah', 'Andav Twikha', 'Kartik Sadat', 'Likha Dwivedi', 'Tarum Sheikh', 'Ujjoal Gappal', 'Veera Hal', 'Divra Kal', 'Viram Rajput', 'Zoya Naidu', 'Bari Pal', 'Rhan Shah', 'Anva Negde', 'Patim Chaudarj', 'Sisha Pal']
+
+  [RNN+Attention]  (200 names generated)
+    Novelty Rate : 97.5%
+    Diversity    : 0.975
+    Sample (15)  : ['Seameh Mekteshektr', 'Gauti Achekyed', 'Seameh Mektekjeshekral', 'Ved Thikur', 'Yesh Khekteshekteshehted', 'Senmiy Dwivedityimanhileh', 'Krish Iyer', 'Nikhil Bosedhiyedhepol', 'Ravi Mekheljeekhekdet', 'Vikrishia Seetoy', 'Zoya Kumorjy', 'Ravi Roy', 'Adityi Thikumekrekumilhit', 'Alio Shetty', 'Kuj Shetly']
+
+--- Summary ---
+  Model                 Novelty    Diversity   Count
+  --------------------------------------------------
+  Vanilla RNN             82.0%        0.980     200
+  BLSTM                   95.5%        0.995     200
+  RNN+Attention           97.5%        0.975     200
+
+==========================================================
+  TASK 3 - QUALITATIVE ANALYSIS
+==========================================================
+
+-- Vanilla RNN --
+  Samples  : ['Sachin Hegde', 'Mira Radeuty', 'Anjkli Menon', 'Chitra Sheikh', 'Mahen Dwivedi', 'Pankaj Kurkr', 'Zoya Mehty', 'Jyoti Bose', 'Nihini Siddiqui', 'Anita Sneti', 'Yuvraj Mishra', 'Tanmay Chatterjee', 'Uday Khanna', 'Alika Bhoudhary', 'Sanya Deshpande', 'Anjali Mishra', 'Aryav Saha', 'Kaiya Iyer', 'Meera Tripathi', 'Aditya Kumar']
+  Novelty  : 82.0%  |  Diversity: 0.980
+
+-- BLSTM --
+  Samples  : ['Eajta Kqmah', 'Andav Twikha', 'Kartik Sadat', 'Likha Dwivedi', 'Tarum Sheikh', 'Ujjoal Gappal', 'Veera Hal', 'Divra Kal', 'Viram Rajput', 'Zoya Naidu', 'Bari Pal', 'Rhan Shah', 'Anva Negde', 'Patim Chaudarj', 'Sisha Pal', 'Suresh Soddi', 'Aunil Dishpande', 'Riya Malhotra', 'Zara Naidu', 'Zeta Rajput']
+  Novelty  : 95.5%  |  Diversity: 0.995
+
+-- RNN+Attention --
+  Samples  : ['Seameh Mekteshektr', 'Gauti Achekyed', 'Seameh Mektekjeshekral', 'Ved Thikur', 'Yesh Khekteshekteshehted', 'Senmiy Dwivedityimanhileh', 'Krish Iyer', 'Nikhil Bosedhiyedhepol', 'Ravi Mekheljeekhekdet', 'Vikrishia Seetoy', 'Zoya Kumorjy', 'Ravi Roy', 'Adityi Thikumekrekumilhit', 'Alio Shetty', 'Kuj Shetly', 'Teshar Kumerjeeteshealeek', 'Diyu Khekterjeekhegdetip', 'Kamish Shetty', 'Ariul Peltet', 'Amit Poldey']
+  Novelty  : 97.5%  |  Diversity: 0.975
+
+--- Discussion ---
+
+All models trained on FULL names (one sequence: "Firstname Lastname").
+The space character is part of the vocabulary.
+    
+Saved -> generated_Vanilla_RNN.txt
+Saved -> generated_BLSTM.txt
+Saved -> generated_RNNAttention.txt
+
+--- Generating plots ---
+  [Plot] -> training_curves_all.png
+  [Plot] -> training_curves_best_loss_bar.png
+  [Plot] -> training_curves_convergence.png
+  [Plot] -> training_curves_loss_gap.png
+  [Plot] -> training_curves_lr_schedule.png
+  [Plot] -> evaluation_comparison.png
+  [Plot] -> eval_name_length_dist.png
+  [Plot] -> eval_score_matrix.png
+
+  eval.py done.  Log: logs/training_log.txt
+
+Output plots
+  training_curves_all.png            -- all 3 models, full-name corpus
+  training_curves_best_loss_bar.png  -- best CE loss per model
+  training_curves_convergence.png    -- convergence speed heatmap
+  training_curves_loss_gap.png   -- loss gap vs best model per epoch
+  training_curves_lr_schedule.png  -- LR schedule overlaid on loss
+  evaluation_comparison.png          -- novelty / diversity / radar
+  eval_name_length_dist.png      -- histogram + box-plot of name lengths
+  eval_score_matrix.png          -- colour-coded per-metric score table
+    
