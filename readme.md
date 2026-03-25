@@ -492,12 +492,13 @@ Krish Iyer  ·  Nikhil Roy  ·  Ravi Roy  ·  Rajesh Iyer  ·  Aditya Selkar
 
 | # | Note | Detail |
 |:---:|:---|:---|
-| 🔒 | **SSL Certificates** | IITJ servers use self-signed certs — SSL verification is auto-disabled in `collect_data.py` |
+| 🌐 | **Data Sources** | Q1: 3 IITJ pages scraped: Academic Regulations (93,175 words), Circulars (1,840), CSE Projects (3,559) |
 | 🎲 | **Reproducibility** | All random seeds fixed to **42** |
 | 📚 | **Vocabulary** | Q1 uses `min_count=1` to retain the full vocabulary on this small corpus |
+| 🏆 | **Composite Score** |Q1: Formula: `0.4×SimilarityGap + 0.3×AnalogyHitRate + 0.2×AvgTop1Cosine + 0.1×VocabCoverage` |
 | 🔡 | **Full-name Training** | Q2: space is in the vocabulary — models train on e.g. `"Mahek Gadiya"` as one character sequence |
 | 📋 | **Shared Log** | Q2: all 3 training scripts append to `logs/training_log.txt` |
-| ⚙️ | **Common Hyperparams** | Q2: E=64, H=256, L=2, max epochs=80, early-stop patience=12 (shared across all 3 models) |
+| ⚙️ | **Common Hyperparameters** | Q2: E=64, H=256, L=2, max epochs=80, early-stop patience=12 (shared across all 3 models) |
 
 ---
 
