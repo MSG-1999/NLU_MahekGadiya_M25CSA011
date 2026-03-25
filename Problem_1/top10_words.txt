@@ -1,0 +1,17 @@
+TOP-10 WORDS (frequency-wise) — IITJ Corpus
+==================================================
+
+student, 1271, course, 797, tech, 758, degree, 708, students, 674, academic, 649, semester, 647, requirements, 561, ph, 554, program, 528
+
+Rank   Word                       Frequency
+-------------------------------------------
+1      student                         1271
+2      course                           797
+3      tech                             758
+4      degree                           708
+5      students                         674
+6      academic                         649
+7      semester                         647
+8      requirements                     561
+9      ph                               554
+10     program                          528
