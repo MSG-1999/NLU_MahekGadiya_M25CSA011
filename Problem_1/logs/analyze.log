@@ -1,0 +1,360 @@
+2026-03-25 12:09:03,810 [INFO] ======================================================================
+2026-03-25 12:09:03,810 [INFO] PROBLEM 1 — Semantic Analysis & Visualization
+2026-03-25 12:09:03,810 [INFO] ======================================================================
+2026-03-25 12:09:03,810 [INFO] 
+============================================================
+2026-03-25 12:09:03,810 [INFO] P1-A  TOP-10 WORDS (frequency-wise)
+2026-03-25 12:09:03,810 [INFO] ============================================================
+2026-03-25 12:09:03,829 [INFO] student, 1271, course, 797, tech, 758, degree, 708, students, 674, academic, 649, semester, 647, requirements, 561, ph, 554, program, 528
+2026-03-25 12:09:03,830 [INFO] Saved → top10_words.txt
+2026-03-25 12:09:04,172 [INFO] Saved → top10_words.png
+2026-03-25 12:09:04,173 [INFO] 
+============================================================
+2026-03-25 12:09:04,174 [INFO] P1-B  EMBEDDING VECTOR FOR 'academic'
+2026-03-25 12:09:04,174 [INFO] ============================================================
+2026-03-25 12:09:04,174 [INFO] loading Word2Vec object from models/sgns_d200_w8_n5_lib.model
+2026-03-25 12:09:04,176 [INFO] loading wv recursively from models/sgns_d200_w8_n5_lib.model.wv.* with mmap=None
+2026-03-25 12:09:04,177 [INFO] setting ignored attribute cum_table to None
+2026-03-25 12:09:04,215 [INFO] Word2Vec lifecycle event {'fname': 'models/sgns_d200_w8_n5_lib.model', 'datetime': '2026-03-25T12:09:04.198087', 'gensim': '4.4.0', 'python': '3.9.25 (main, Nov  3 2025, 22:33:05) \n[GCC 11.2.0]', 'platform': 'Linux-5.10.0-0.bpo.9-amd64-x86_64-with-glibc2.28', 'event': 'loaded'}
+2026-03-25 12:09:04,216 [INFO] Dim=200, L2-norm=4.6861
+2026-03-25 12:09:04,216 [INFO] Full vector saved to word_embedding.txt
+2026-03-25 12:09:04,216 [INFO] Saved → word_embedding.txt
+2026-03-25 12:09:04,217 [INFO] 
+Generating hyperparameter comparison plots …
+2026-03-25 12:09:04,239 [INFO] loading Word2Vec object from models/cbow_d100_w8_n5_lib.model
+2026-03-25 12:09:04,241 [INFO] loading wv recursively from models/cbow_d100_w8_n5_lib.model.wv.* with mmap=None
+2026-03-25 12:09:04,241 [INFO] setting ignored attribute cum_table to None
+2026-03-25 12:09:04,262 [INFO] Word2Vec lifecycle event {'fname': 'models/cbow_d100_w8_n5_lib.model', 'datetime': '2026-03-25T12:09:04.262727', 'gensim': '4.4.0', 'python': '3.9.25 (main, Nov  3 2025, 22:33:05) \n[GCC 11.2.0]', 'platform': 'Linux-5.10.0-0.bpo.9-amd64-x86_64-with-glibc2.28', 'event': 'loaded'}
+2026-03-25 12:09:04,263 [INFO] loading Word2Vec object from models/cbow_d150_w8_n5_lib.model
+2026-03-25 12:09:04,266 [INFO] loading wv recursively from models/cbow_d150_w8_n5_lib.model.wv.* with mmap=None
+2026-03-25 12:09:04,266 [INFO] setting ignored attribute cum_table to None
+2026-03-25 12:09:04,287 [INFO] Word2Vec lifecycle event {'fname': 'models/cbow_d150_w8_n5_lib.model', 'datetime': '2026-03-25T12:09:04.287576', 'gensim': '4.4.0', 'python': '3.9.25 (main, Nov  3 2025, 22:33:05) \n[GCC 11.2.0]', 'platform': 'Linux-5.10.0-0.bpo.9-amd64-x86_64-with-glibc2.28', 'event': 'loaded'}
+2026-03-25 12:09:04,288 [INFO] loading Word2Vec object from models/cbow_d200_w8_n5_lib.model
+2026-03-25 12:09:04,290 [INFO] loading wv recursively from models/cbow_d200_w8_n5_lib.model.wv.* with mmap=None
+2026-03-25 12:09:04,290 [INFO] setting ignored attribute cum_table to None
+2026-03-25 12:09:04,311 [INFO] Word2Vec lifecycle event {'fname': 'models/cbow_d200_w8_n5_lib.model', 'datetime': '2026-03-25T12:09:04.311385', 'gensim': '4.4.0', 'python': '3.9.25 (main, Nov  3 2025, 22:33:05) \n[GCC 11.2.0]', 'platform': 'Linux-5.10.0-0.bpo.9-amd64-x86_64-with-glibc2.28', 'event': 'loaded'}
+2026-03-25 12:09:04,332 [INFO] loading Word2Vec object from models/sgns_d200_w8_n5_lib.model
+2026-03-25 12:09:04,334 [INFO] loading wv recursively from models/sgns_d200_w8_n5_lib.model.wv.* with mmap=None
+2026-03-25 12:09:04,334 [INFO] setting ignored attribute cum_table to None
+2026-03-25 12:09:04,355 [INFO] Word2Vec lifecycle event {'fname': 'models/sgns_d200_w8_n5_lib.model', 'datetime': '2026-03-25T12:09:04.355487', 'gensim': '4.4.0', 'python': '3.9.25 (main, Nov  3 2025, 22:33:05) \n[GCC 11.2.0]', 'platform': 'Linux-5.10.0-0.bpo.9-amd64-x86_64-with-glibc2.28', 'event': 'loaded'}
+2026-03-25 12:09:04,356 [INFO] loading Word2Vec object from models/sgns_d250_w8_n5_lib.model
+2026-03-25 12:09:04,358 [INFO] loading wv recursively from models/sgns_d250_w8_n5_lib.model.wv.* with mmap=None
+2026-03-25 12:09:04,358 [INFO] setting ignored attribute cum_table to None
+2026-03-25 12:09:04,379 [INFO] Word2Vec lifecycle event {'fname': 'models/sgns_d250_w8_n5_lib.model', 'datetime': '2026-03-25T12:09:04.379761', 'gensim': '4.4.0', 'python': '3.9.25 (main, Nov  3 2025, 22:33:05) \n[GCC 11.2.0]', 'platform': 'Linux-5.10.0-0.bpo.9-amd64-x86_64-with-glibc2.28', 'event': 'loaded'}
+2026-03-25 12:09:04,399 [INFO] loading Word2Vec object from models/sgns_d300_w8_n5_lib.model
+2026-03-25 12:09:04,403 [INFO] loading wv recursively from models/sgns_d300_w8_n5_lib.model.wv.* with mmap=None
+2026-03-25 12:09:04,403 [INFO] setting ignored attribute cum_table to None
+2026-03-25 12:09:04,437 [INFO] Word2Vec lifecycle event {'fname': 'models/sgns_d300_w8_n5_lib.model', 'datetime': '2026-03-25T12:09:04.437966', 'gensim': '4.4.0', 'python': '3.9.25 (main, Nov  3 2025, 22:33:05) \n[GCC 11.2.0]', 'platform': 'Linux-5.10.0-0.bpo.9-amd64-x86_64-with-glibc2.28', 'event': 'loaded'}
+2026-03-25 12:09:05,037 [INFO] Saved → hyperparam_dim.png
+2026-03-25 12:09:05,058 [INFO] loading Word2Vec object from models/cbow_d100_w5_n5_lib.model
+2026-03-25 12:09:05,060 [INFO] loading wv recursively from models/cbow_d100_w5_n5_lib.model.wv.* with mmap=None
+2026-03-25 12:09:05,060 [INFO] setting ignored attribute cum_table to None
+2026-03-25 12:09:05,081 [INFO] Word2Vec lifecycle event {'fname': 'models/cbow_d100_w5_n5_lib.model', 'datetime': '2026-03-25T12:09:05.080999', 'gensim': '4.4.0', 'python': '3.9.25 (main, Nov  3 2025, 22:33:05) \n[GCC 11.2.0]', 'platform': 'Linux-5.10.0-0.bpo.9-amd64-x86_64-with-glibc2.28', 'event': 'loaded'}
+2026-03-25 12:09:05,081 [INFO] loading Word2Vec object from models/cbow_d100_w8_n5_lib.model
+2026-03-25 12:09:05,083 [INFO] loading wv recursively from models/cbow_d100_w8_n5_lib.model.wv.* with mmap=None
+2026-03-25 12:09:05,083 [INFO] setting ignored attribute cum_table to None
+2026-03-25 12:09:05,104 [INFO] Word2Vec lifecycle event {'fname': 'models/cbow_d100_w8_n5_lib.model', 'datetime': '2026-03-25T12:09:05.104547', 'gensim': '4.4.0', 'python': '3.9.25 (main, Nov  3 2025, 22:33:05) \n[GCC 11.2.0]', 'platform': 'Linux-5.10.0-0.bpo.9-amd64-x86_64-with-glibc2.28', 'event': 'loaded'}
+2026-03-25 12:09:05,105 [INFO] loading Word2Vec object from models/cbow_d100_w10_n5_lib.model
+2026-03-25 12:09:05,106 [INFO] loading wv recursively from models/cbow_d100_w10_n5_lib.model.wv.* with mmap=None
+2026-03-25 12:09:05,107 [INFO] setting ignored attribute cum_table to None
+2026-03-25 12:09:05,128 [INFO] Word2Vec lifecycle event {'fname': 'models/cbow_d100_w10_n5_lib.model', 'datetime': '2026-03-25T12:09:05.128463', 'gensim': '4.4.0', 'python': '3.9.25 (main, Nov  3 2025, 22:33:05) \n[GCC 11.2.0]', 'platform': 'Linux-5.10.0-0.bpo.9-amd64-x86_64-with-glibc2.28', 'event': 'loaded'}
+2026-03-25 12:09:05,145 [INFO] loading Word2Vec object from models/sgns_d100_w5_n5_lib.model
+2026-03-25 12:09:05,147 [INFO] loading wv recursively from models/sgns_d100_w5_n5_lib.model.wv.* with mmap=None
+2026-03-25 12:09:05,147 [INFO] setting ignored attribute cum_table to None
+2026-03-25 12:09:05,167 [INFO] Word2Vec lifecycle event {'fname': 'models/sgns_d100_w5_n5_lib.model', 'datetime': '2026-03-25T12:09:05.167770', 'gensim': '4.4.0', 'python': '3.9.25 (main, Nov  3 2025, 22:33:05) \n[GCC 11.2.0]', 'platform': 'Linux-5.10.0-0.bpo.9-amd64-x86_64-with-glibc2.28', 'event': 'loaded'}
+2026-03-25 12:09:05,168 [INFO] loading Word2Vec object from models/sgns_d200_w8_n5_lib.model
+2026-03-25 12:09:05,170 [INFO] loading wv recursively from models/sgns_d200_w8_n5_lib.model.wv.* with mmap=None
+2026-03-25 12:09:05,170 [INFO] setting ignored attribute cum_table to None
+2026-03-25 12:09:05,191 [INFO] Word2Vec lifecycle event {'fname': 'models/sgns_d200_w8_n5_lib.model', 'datetime': '2026-03-25T12:09:05.191016', 'gensim': '4.4.0', 'python': '3.9.25 (main, Nov  3 2025, 22:33:05) \n[GCC 11.2.0]', 'platform': 'Linux-5.10.0-0.bpo.9-amd64-x86_64-with-glibc2.28', 'event': 'loaded'}
+2026-03-25 12:09:05,192 [INFO] loading Word2Vec object from models/sgns_d100_w10_n5_lib.model
+2026-03-25 12:09:05,193 [INFO] loading wv recursively from models/sgns_d100_w10_n5_lib.model.wv.* with mmap=None
+2026-03-25 12:09:05,193 [INFO] setting ignored attribute cum_table to None
+2026-03-25 12:09:05,214 [INFO] Word2Vec lifecycle event {'fname': 'models/sgns_d100_w10_n5_lib.model', 'datetime': '2026-03-25T12:09:05.214503', 'gensim': '4.4.0', 'python': '3.9.25 (main, Nov  3 2025, 22:33:05) \n[GCC 11.2.0]', 'platform': 'Linux-5.10.0-0.bpo.9-amd64-x86_64-with-glibc2.28', 'event': 'loaded'}
+2026-03-25 12:09:05,630 [INFO] Saved → hyperparam_window.png
+2026-03-25 12:09:05,652 [INFO] loading Word2Vec object from models/cbow_d100_w8_n5_lib.model
+2026-03-25 12:09:05,654 [INFO] loading wv recursively from models/cbow_d100_w8_n5_lib.model.wv.* with mmap=None
+2026-03-25 12:09:05,654 [INFO] setting ignored attribute cum_table to None
+2026-03-25 12:09:05,676 [INFO] Word2Vec lifecycle event {'fname': 'models/cbow_d100_w8_n5_lib.model', 'datetime': '2026-03-25T12:09:05.676030', 'gensim': '4.4.0', 'python': '3.9.25 (main, Nov  3 2025, 22:33:05) \n[GCC 11.2.0]', 'platform': 'Linux-5.10.0-0.bpo.9-amd64-x86_64-with-glibc2.28', 'event': 'loaded'}
+2026-03-25 12:09:05,676 [INFO] loading Word2Vec object from models/cbow_d100_w8_n10_lib.model
+2026-03-25 12:09:05,678 [INFO] loading wv recursively from models/cbow_d100_w8_n10_lib.model.wv.* with mmap=None
+2026-03-25 12:09:05,678 [INFO] setting ignored attribute cum_table to None
+2026-03-25 12:09:05,699 [INFO] Word2Vec lifecycle event {'fname': 'models/cbow_d100_w8_n10_lib.model', 'datetime': '2026-03-25T12:09:05.699770', 'gensim': '4.4.0', 'python': '3.9.25 (main, Nov  3 2025, 22:33:05) \n[GCC 11.2.0]', 'platform': 'Linux-5.10.0-0.bpo.9-amd64-x86_64-with-glibc2.28', 'event': 'loaded'}
+2026-03-25 12:09:05,700 [INFO] loading Word2Vec object from models/cbow_d100_w8_n15_lib.model
+2026-03-25 12:09:05,702 [INFO] loading wv recursively from models/cbow_d100_w8_n15_lib.model.wv.* with mmap=None
+2026-03-25 12:09:05,702 [INFO] setting ignored attribute cum_table to None
+2026-03-25 12:09:05,723 [INFO] Word2Vec lifecycle event {'fname': 'models/cbow_d100_w8_n15_lib.model', 'datetime': '2026-03-25T12:09:05.723405', 'gensim': '4.4.0', 'python': '3.9.25 (main, Nov  3 2025, 22:33:05) \n[GCC 11.2.0]', 'platform': 'Linux-5.10.0-0.bpo.9-amd64-x86_64-with-glibc2.28', 'event': 'loaded'}
+2026-03-25 12:09:05,741 [INFO] loading Word2Vec object from models/sgns_d200_w8_n5_lib.model
+2026-03-25 12:09:05,743 [INFO] loading wv recursively from models/sgns_d200_w8_n5_lib.model.wv.* with mmap=None
+2026-03-25 12:09:05,743 [INFO] setting ignored attribute cum_table to None
+2026-03-25 12:09:05,766 [INFO] Word2Vec lifecycle event {'fname': 'models/sgns_d200_w8_n5_lib.model', 'datetime': '2026-03-25T12:09:05.766011', 'gensim': '4.4.0', 'python': '3.9.25 (main, Nov  3 2025, 22:33:05) \n[GCC 11.2.0]', 'platform': 'Linux-5.10.0-0.bpo.9-amd64-x86_64-with-glibc2.28', 'event': 'loaded'}
+2026-03-25 12:09:05,767 [INFO] loading Word2Vec object from models/sgns_d100_w8_n10_lib.model
+2026-03-25 12:09:05,768 [INFO] loading wv recursively from models/sgns_d100_w8_n10_lib.model.wv.* with mmap=None
+2026-03-25 12:09:05,768 [INFO] setting ignored attribute cum_table to None
+2026-03-25 12:09:05,790 [INFO] Word2Vec lifecycle event {'fname': 'models/sgns_d100_w8_n10_lib.model', 'datetime': '2026-03-25T12:09:05.790471', 'gensim': '4.4.0', 'python': '3.9.25 (main, Nov  3 2025, 22:33:05) \n[GCC 11.2.0]', 'platform': 'Linux-5.10.0-0.bpo.9-amd64-x86_64-with-glibc2.28', 'event': 'loaded'}
+2026-03-25 12:09:05,791 [INFO] loading Word2Vec object from models/sgns_d100_w8_n15_lib.model
+2026-03-25 12:09:05,792 [INFO] loading wv recursively from models/sgns_d100_w8_n15_lib.model.wv.* with mmap=None
+2026-03-25 12:09:05,792 [INFO] setting ignored attribute cum_table to None
+2026-03-25 12:09:05,814 [INFO] Word2Vec lifecycle event {'fname': 'models/sgns_d100_w8_n15_lib.model', 'datetime': '2026-03-25T12:09:05.814163', 'gensim': '4.4.0', 'python': '3.9.25 (main, Nov  3 2025, 22:33:05) \n[GCC 11.2.0]', 'platform': 'Linux-5.10.0-0.bpo.9-amd64-x86_64-with-glibc2.28', 'event': 'loaded'}
+2026-03-25 12:09:06,233 [INFO] Saved → hyperparam_neg.png
+2026-03-25 12:09:06,238 [INFO] loading Word2Vec object from models/cbow_d100_w8_n5_lib.model
+2026-03-25 12:09:06,240 [INFO] loading wv recursively from models/cbow_d100_w8_n5_lib.model.wv.* with mmap=None
+2026-03-25 12:09:06,240 [INFO] setting ignored attribute cum_table to None
+2026-03-25 12:09:06,262 [INFO] Word2Vec lifecycle event {'fname': 'models/cbow_d100_w8_n5_lib.model', 'datetime': '2026-03-25T12:09:06.262100', 'gensim': '4.4.0', 'python': '3.9.25 (main, Nov  3 2025, 22:33:05) \n[GCC 11.2.0]', 'platform': 'Linux-5.10.0-0.bpo.9-amd64-x86_64-with-glibc2.28', 'event': 'loaded'}
+2026-03-25 12:09:06,262 [INFO] loading Word2Vec object from models/sgns_d200_w8_n5_lib.model
+2026-03-25 12:09:06,265 [INFO] loading wv recursively from models/sgns_d200_w8_n5_lib.model.wv.* with mmap=None
+2026-03-25 12:09:06,265 [INFO] setting ignored attribute cum_table to None
+2026-03-25 12:09:06,287 [INFO] Word2Vec lifecycle event {'fname': 'models/sgns_d200_w8_n5_lib.model', 'datetime': '2026-03-25T12:09:06.287067', 'gensim': '4.4.0', 'python': '3.9.25 (main, Nov  3 2025, 22:33:05) \n[GCC 11.2.0]', 'platform': 'Linux-5.10.0-0.bpo.9-amd64-x86_64-with-glibc2.28', 'event': 'loaded'}
+2026-03-25 12:09:06,287 [INFO] 
+######################################################################
+2026-03-25 12:09:06,287 [INFO] # MODEL: Scratch CBOW
+2026-03-25 12:09:06,287 [INFO] ######################################################################
+2026-03-25 12:09:06,287 [INFO] 
+============================================================
+2026-03-25 12:09:06,287 [INFO]   Top-5 Nearest Neighbours — Scratch CBOW
+2026-03-25 12:09:06,287 [INFO] ============================================================
+2026-03-25 12:09:06,287 [INFO] 
+  'research':
+2026-03-25 12:09:06,287 [INFO]     1. formation              cosine=0.3420
+2026-03-25 12:09:06,288 [INFO]     2. certify                cosine=0.3250
+2026-03-25 12:09:06,288 [INFO]     3. copies                 cosine=0.2983
+2026-03-25 12:09:06,288 [INFO]     4. because                cosine=0.2869
+2026-03-25 12:09:06,288 [INFO]     5. problem                cosine=0.2843
+2026-03-25 12:09:06,288 [INFO] 
+  'student':
+2026-03-25 12:09:06,288 [INFO]     1. students               cosine=0.4650
+2026-03-25 12:09:06,288 [INFO]     2. applications           cosine=0.4302
+2026-03-25 12:09:06,288 [INFO]     3. addressed              cosine=0.4042
+2026-03-25 12:09:06,288 [INFO]     4. failed                 cosine=0.3945
+2026-03-25 12:09:06,288 [INFO]     5. write                  cosine=0.3838
+2026-03-25 12:09:06,288 [INFO] 
+  'phd':
+2026-03-25 12:09:06,289 [INFO]     1. practicals             cosine=0.4625
+2026-03-25 12:09:06,289 [INFO]     2. short                  cosine=0.4564
+2026-03-25 12:09:06,289 [INFO]     3. msc                    cosine=0.3998
+2026-03-25 12:09:06,289 [INFO]     4. sem                    cosine=0.3994
+2026-03-25 12:09:06,289 [INFO]     5. governing              cosine=0.3744
+2026-03-25 12:09:06,289 [INFO] 
+  'exam':
+2026-03-25 12:09:06,289 [INFO]     1. quiz                   cosine=0.8839
+2026-03-25 12:09:06,289 [INFO]     2. was                    cosine=0.5489
+2026-03-25 12:09:06,289 [INFO]     3. housing                cosine=0.5187
+2026-03-25 12:09:06,289 [INFO]     4. treatment              cosine=0.4983
+2026-03-25 12:09:06,289 [INFO]     5. february               cosine=0.4921
+2026-03-25 12:09:06,289 [INFO] 
+============================================================
+2026-03-25 12:09:06,289 [INFO]   Analogy Experiments — Scratch CBOW
+2026-03-25 12:09:06,289 [INFO] ============================================================
+2026-03-25 12:09:06,290 [INFO] 
+  [1] UG:BTech :: PG:?  (degree progression)
+2026-03-25 12:09:06,290 [WARNING]       OOV words: ['btech'] — skipping.
+2026-03-25 12:09:06,290 [INFO] 
+  [2] faculty:research :: student:?  (role-activity)
+2026-03-25 12:09:06,290 [INFO]       Result: [('mbbs', 0.3091), ('becoming', 0.2988), ('candidate', 0.2902)]
+2026-03-25 12:09:06,290 [INFO] 
+  [3] summer:may :: winter:?  (season-month)
+2026-03-25 12:09:06,290 [INFO]       Result: [('constituted', 0.4346), ('likely', 0.3791), ('fee', 0.3721)]
+2026-03-25 12:09:06,290 [INFO] 
+  [4] academic:semester :: institute:?  (temporal-institutional)
+2026-03-25 12:09:06,291 [INFO]       Result: [('session', 0.394), ('cumulative', 0.3868), ('area', 0.3744)]
+2026-03-25 12:09:06,291 [INFO] 
+  [5] admission:ug :: fellowship:?  (program-stage)
+2026-03-25 12:09:06,291 [INFO]       Result: [('associate', 0.4104), ('except', 0.3713), ('approves', 0.3668)]
+2026-03-25 12:09:06,291 [INFO] 
+  Generating PCA visualization …
+2026-03-25 12:09:06,616 [INFO]   PCA explained variance: PC1=0.081, PC2=0.054
+2026-03-25 12:09:08,860 [INFO]   Saved → visualization_pca_cbow_d100_w8_n5.png
+2026-03-25 12:09:08,860 [INFO] 
+  Generating t-SNE visualization …
+2026-03-25 12:09:09,488 [INFO]   t-SNE done  (perplexity=24)
+2026-03-25 12:09:11,791 [INFO]   Saved → visualization_tsne_cbow_d100_w8_n5.png
+2026-03-25 12:09:11,791 [INFO] 
+######################################################################
+2026-03-25 12:09:11,791 [INFO] # MODEL: Scratch SGNS
+2026-03-25 12:09:11,791 [INFO] ######################################################################
+2026-03-25 12:09:11,791 [INFO] 
+============================================================
+2026-03-25 12:09:11,791 [INFO]   Top-5 Nearest Neighbours — Scratch SGNS
+2026-03-25 12:09:11,791 [INFO] ============================================================
+2026-03-25 12:09:11,792 [INFO] 
+  'research':
+2026-03-25 12:09:11,792 [INFO]     1. platforms              cosine=0.4932
+2026-03-25 12:09:11,792 [INFO]     2. proposal               cosine=0.4849
+2026-03-25 12:09:11,792 [INFO]     3. mathematics            cosine=0.4354
+2026-03-25 12:09:11,792 [INFO]     4. worth                  cosine=0.4161
+2026-03-25 12:09:11,792 [INFO]     5. relevance              cosine=0.4151
+2026-03-25 12:09:11,793 [INFO] 
+  'student':
+2026-03-25 12:09:11,793 [INFO]     1. the                    cosine=0.3617
+2026-03-25 12:09:11,793 [INFO]     2. pe                     cosine=0.3608
+2026-03-25 12:09:11,793 [INFO]     3. clauses                cosine=0.3390
+2026-03-25 12:09:11,793 [INFO]     4. oe                     cosine=0.3242
+2026-03-25 12:09:11,793 [INFO]     5. to                     cosine=0.3239
+2026-03-25 12:09:11,793 [INFO] 
+  'phd':
+2026-03-25 12:09:11,793 [INFO]     1. mtech                  cosine=0.4408
+2026-03-25 12:09:11,793 [INFO]     2. msc                    cosine=0.4249
+2026-03-25 12:09:11,793 [INFO]     3. admit                  cosine=0.4210
+2026-03-25 12:09:11,793 [INFO]     4. avail                  cosine=0.3782
+2026-03-25 12:09:11,794 [INFO]     5. me                     cosine=0.3731
+2026-03-25 12:09:11,794 [INFO] 
+  'exam':
+2026-03-25 12:09:11,794 [INFO]     1. quiz                   cosine=0.8831
+2026-03-25 12:09:11,794 [INFO]     2. scheduling             cosine=0.5905
+2026-03-25 12:09:11,794 [INFO]     3. suggested              cosine=0.5897
+2026-03-25 12:09:11,794 [INFO]     4. groupings              cosine=0.5412
+2026-03-25 12:09:11,794 [INFO]     5. residing               cosine=0.5313
+2026-03-25 12:09:11,794 [INFO] 
+============================================================
+2026-03-25 12:09:11,794 [INFO]   Analogy Experiments — Scratch SGNS
+2026-03-25 12:09:11,794 [INFO] ============================================================
+2026-03-25 12:09:11,794 [INFO] 
+  [1] UG:BTech :: PG:?  (degree progression)
+2026-03-25 12:09:11,794 [WARNING]       OOV words: ['btech'] — skipping.
+2026-03-25 12:09:11,794 [INFO] 
+  [2] faculty:research :: student:?  (role-activity)
+2026-03-25 12:09:11,795 [INFO]       Result: [('proposal', 0.3726), ('mathematics', 0.3177), ('worth', 0.3144)]
+2026-03-25 12:09:11,795 [INFO] 
+  [3] summer:may :: winter:?  (season-month)
+2026-03-25 12:09:11,795 [INFO]       Result: [('workshops', 0.3286), ('breaks', 0.3108), ('received', 0.3053)]
+2026-03-25 12:09:11,795 [INFO] 
+  [4] academic:semester :: institute:?  (temporal-institutional)
+2026-03-25 12:09:11,795 [INFO]       Result: [('university', 0.347), ('beginning', 0.3367), ('nominated', 0.3343)]
+2026-03-25 12:09:11,796 [INFO] 
+  [5] admission:ug :: fellowship:?  (program-stage)
+2026-03-25 12:09:11,796 [INFO]       Result: [('swaranajayanti', 0.3939), ('discontinuation', 0.3678), ('associate', 0.3442)]
+2026-03-25 12:09:11,796 [INFO] 
+  Generating PCA visualization …
+2026-03-25 12:09:12,575 [INFO]   PCA explained variance: PC1=0.092, PC2=0.062
+2026-03-25 12:09:14,754 [INFO]   Saved → visualization_pca_sgns_d200_w8_n5.png
+2026-03-25 12:09:14,754 [INFO] 
+  Generating t-SNE visualization …
+2026-03-25 12:09:15,160 [INFO]   t-SNE done  (perplexity=24)
+2026-03-25 12:09:17,429 [INFO]   Saved → visualization_tsne_sgns_d200_w8_n5.png
+2026-03-25 12:09:17,429 [INFO] 
+######################################################################
+2026-03-25 12:09:17,429 [INFO] # MODEL: Library CBOW (Gensim)
+2026-03-25 12:09:17,429 [INFO] ######################################################################
+2026-03-25 12:09:17,429 [INFO] 
+============================================================
+2026-03-25 12:09:17,429 [INFO]   Top-5 Nearest Neighbours — Library CBOW (Gensim)
+2026-03-25 12:09:17,429 [INFO] ============================================================
+2026-03-25 12:09:17,430 [INFO] 
+  'research':
+2026-03-25 12:09:17,430 [INFO]     1. appoint                cosine=0.4350
+2026-03-25 12:09:17,430 [INFO]     2. hs                     cosine=0.4218
+2026-03-25 12:09:17,430 [INFO]     3. caretaker              cosine=0.4041
+2026-03-25 12:09:17,430 [INFO]     4. physics                cosine=0.3793
+2026-03-25 12:09:17,430 [INFO]     5. platforms              cosine=0.3764
+2026-03-25 12:09:17,431 [INFO] 
+  'student':
+2026-03-25 12:09:17,431 [INFO]     1. students               cosine=0.5190
+2026-03-25 12:09:17,431 [INFO]     2. or                     cosine=0.4358
+2026-03-25 12:09:17,431 [INFO]     3. the                    cosine=0.3862
+2026-03-25 12:09:17,431 [INFO]     4. semesters              cosine=0.3574
+2026-03-25 12:09:17,431 [INFO]     5. she                    cosine=0.3419
+2026-03-25 12:09:17,431 [INFO] 
+  'phd':
+2026-03-25 12:09:17,431 [INFO]     1. mtech                  cosine=0.6709
+2026-03-25 12:09:17,431 [INFO]     2. admit                  cosine=0.6498
+2026-03-25 12:09:17,432 [INFO]     3. programs               cosine=0.5556
+2026-03-25 12:09:17,432 [INFO]     4. summary                cosine=0.5010
+2026-03-25 12:09:17,432 [INFO]     5. mc                     cosine=0.4711
+2026-03-25 12:09:17,432 [INFO] 
+  'exam':
+2026-03-25 12:09:17,432 [INFO]     1. quiz                   cosine=0.9818
+2026-03-25 12:09:17,432 [INFO]     2. hostels                cosine=0.7409
+2026-03-25 12:09:17,432 [INFO]     3. residing               cosine=0.7072
+2026-03-25 12:09:17,432 [INFO]     4. hospital               cosine=0.5353
+2026-03-25 12:09:17,432 [INFO]     5. december               cosine=0.5036
+2026-03-25 12:09:17,432 [INFO] 
+============================================================
+2026-03-25 12:09:17,432 [INFO]   Analogy Experiments — Library CBOW (Gensim)
+2026-03-25 12:09:17,432 [INFO] ============================================================
+2026-03-25 12:09:17,432 [INFO] 
+  [1] UG:BTech :: PG:?  (degree progression)
+2026-03-25 12:09:17,432 [WARNING]       OOV words: ['btech'] — skipping.
+2026-03-25 12:09:17,433 [INFO] 
+  [2] faculty:research :: student:?  (role-activity)
+2026-03-25 12:09:17,433 [INFO]       Result: [('ph', 0.3915), ('becoming', 0.3365), ('applicant', 0.3259)]
+2026-03-25 12:09:17,433 [INFO] 
+  [3] summer:may :: winter:?  (season-month)
+2026-03-25 12:09:17,433 [INFO]       Result: [('topic', 0.3937), ('interest', 0.3657), ('workshops', 0.3537)]
+2026-03-25 12:09:17,433 [INFO] 
+  [4] academic:semester :: institute:?  (temporal-institutional)
+2026-03-25 12:09:17,434 [INFO]       Result: [('area', 0.3586), ('mba', 0.3008), ('certificate', 0.298)]
+2026-03-25 12:09:17,434 [INFO] 
+  [5] admission:ug :: fellowship:?  (program-stage)
+2026-03-25 12:09:17,434 [INFO]       Result: [('associate', 0.4868), ('swaranajayanti', 0.4526), ('ta', 0.4351)]
+2026-03-25 12:09:17,434 [INFO] 
+  Generating PCA visualization …
+2026-03-25 12:09:17,723 [INFO]   PCA explained variance: PC1=0.067, PC2=0.062
+2026-03-25 12:09:20,033 [INFO]   Saved → visualization_pca_cbow_d100_w8_n5_lib.png
+2026-03-25 12:09:20,034 [INFO] 
+  Generating t-SNE visualization …
+2026-03-25 12:09:20,425 [INFO]   t-SNE done  (perplexity=24)
+2026-03-25 12:09:22,690 [INFO]   Saved → visualization_tsne_cbow_d100_w8_n5_lib.png
+2026-03-25 12:09:22,691 [INFO] 
+######################################################################
+2026-03-25 12:09:22,691 [INFO] # MODEL: Library SGNS (Gensim)
+2026-03-25 12:09:22,691 [INFO] ######################################################################
+2026-03-25 12:09:22,691 [INFO] 
+============================================================
+2026-03-25 12:09:22,691 [INFO]   Top-5 Nearest Neighbours — Library SGNS (Gensim)
+2026-03-25 12:09:22,691 [INFO] ============================================================
+2026-03-25 12:09:22,693 [INFO] 
+  'research':
+2026-03-25 12:09:22,693 [INFO]     1. proposal               cosine=0.5599
+2026-03-25 12:09:22,693 [INFO]     2. representative         cosine=0.4809
+2026-03-25 12:09:22,693 [INFO]     3. worth                  cosine=0.4744
+2026-03-25 12:09:22,693 [INFO]     4. platforms              cosine=0.4644
+2026-03-25 12:09:22,693 [INFO]     5. relevance              cosine=0.4631
+2026-03-25 12:09:22,693 [INFO] 
+  'student':
+2026-03-25 12:09:22,694 [INFO]     1. attend                 cosine=0.3100
+2026-03-25 12:09:22,694 [INFO]     2. withdraw               cosine=0.3057
+2026-03-25 12:09:22,694 [INFO]     3. becoming               cosine=0.3003
+2026-03-25 12:09:22,694 [INFO]     4. exams                  cosine=0.3002
+2026-03-25 12:09:22,694 [INFO]     5. temporarily            cosine=0.2993
+2026-03-25 12:09:22,694 [INFO] 
+  'phd':
+2026-03-25 12:09:22,694 [INFO]     1. admit                  cosine=0.6214
+2026-03-25 12:09:22,694 [INFO]     2. mtech                  cosine=0.5856
+2026-03-25 12:09:22,694 [INFO]     3. existing               cosine=0.5680
+2026-03-25 12:09:22,694 [INFO]     4. msc                    cosine=0.5563
+2026-03-25 12:09:22,694 [INFO]     5. avail                  cosine=0.5461
+2026-03-25 12:09:22,695 [INFO] 
+  'exam':
+2026-03-25 12:09:22,695 [INFO]     1. quiz                   cosine=0.9835
+2026-03-25 12:09:22,695 [INFO]     2. was                    cosine=0.8279
+2026-03-25 12:09:22,695 [INFO]     3. hostels                cosine=0.8221
+2026-03-25 12:09:22,695 [INFO]     4. residing               cosine=0.7433
+2026-03-25 12:09:22,695 [INFO]     5. doctors                cosine=0.7286
+2026-03-25 12:09:22,695 [INFO] 
+============================================================
+2026-03-25 12:09:22,695 [INFO]   Analogy Experiments — Library SGNS (Gensim)
+2026-03-25 12:09:22,695 [INFO] ============================================================
+2026-03-25 12:09:22,695 [INFO] 
+  [1] UG:BTech :: PG:?  (degree progression)
+2026-03-25 12:09:22,695 [WARNING]       OOV words: ['btech'] — skipping.
+2026-03-25 12:09:22,695 [INFO] 
+  [2] faculty:research :: student:?  (role-activity)
+2026-03-25 12:09:22,696 [INFO]       Result: [('proposal', 0.408), ('representative', 0.3213), ('worth', 0.3145)]
+2026-03-25 12:09:22,696 [INFO] 
+  [3] summer:may :: winter:?  (season-month)
+2026-03-25 12:09:22,696 [INFO]       Result: [('breaks', 0.3975), ('mid', 0.3875), ('entitled', 0.3874)]
+2026-03-25 12:09:22,696 [INFO] 
+  [4] academic:semester :: institute:?  (temporal-institutional)
+2026-03-25 12:09:22,697 [INFO]       Result: [('hosting', 0.3388), ('university', 0.3368), ('eighth', 0.3285)]
+2026-03-25 12:09:22,697 [INFO] 
+  [5] admission:ug :: fellowship:?  (program-stage)
+2026-03-25 12:09:22,697 [INFO]       Result: [('swaranajayanti', 0.4664), ('perturbations', 0.432), ('pgs', 0.4145)]
+2026-03-25 12:09:22,697 [INFO] 
+  Generating PCA visualization …
+2026-03-25 12:09:23,571 [INFO]   PCA explained variance: PC1=0.046, PC2=0.044
+2026-03-25 12:09:25,750 [INFO]   Saved → visualization_pca_sgns_d200_w8_n5_lib.png
+2026-03-25 12:09:25,750 [INFO] 
+  Generating t-SNE visualization …
+2026-03-25 12:09:26,066 [INFO]   t-SNE done  (perplexity=24)
+2026-03-25 12:09:28,286 [INFO]   Saved → visualization_tsne_sgns_d200_w8_n5_lib.png
+2026-03-25 12:09:28,287 [INFO] 
+=== Analysis complete. All outputs saved. ===

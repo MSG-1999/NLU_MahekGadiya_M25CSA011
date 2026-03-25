@@ -1,0 +1,75 @@
+========================================================================
+WORD2VEC — QUANTITATIVE EVALUATION REPORT
+IIT Jodhpur Academic Corpus  |  Vocab: 2,026  |  Sentences: 5,457
+========================================================================
+
+MODEL: Scratch CBOW
+------------------------------------------------------------------------
+  Avg cosine sim  (similar pairs)    : 0.2343
+  Avg cosine sim  (dissimilar pairs) : 0.0315
+  Similarity gap  (↑ better)         : 0.2028
+  Analogy hit rate (top-3, ↑ better) : 0.0000  (0/4 correct)
+  Vocabulary coverage (cluster words): 0.8929  (25/28 words present)
+  Avg top-1 neighbour cosine         : 0.5384
+
+MODEL: Scratch SGNS
+------------------------------------------------------------------------
+  Avg cosine sim  (similar pairs)    : 0.3588
+  Avg cosine sim  (dissimilar pairs) : 0.0777
+  Similarity gap  (↑ better)         : 0.2811
+  Analogy hit rate (top-3, ↑ better) : 0.2500  (1/4 correct)
+  Vocabulary coverage (cluster words): 0.8929  (25/28 words present)
+  Avg top-1 neighbour cosine         : 0.5447
+
+MODEL: Library CBOW (Gensim)
+------------------------------------------------------------------------
+  Avg cosine sim  (similar pairs)    : 0.4108
+  Avg cosine sim  (dissimilar pairs) : -0.0774
+  Similarity gap  (↑ better)         : 0.4882
+  Analogy hit rate (top-3, ↑ better) : 0.0000  (0/4 correct)
+  Vocabulary coverage (cluster words): 0.8929  (25/28 words present)
+  Avg top-1 neighbour cosine         : 0.6517
+
+MODEL: Library SGNS (Gensim)
+------------------------------------------------------------------------
+  Avg cosine sim  (similar pairs)    : 0.3951
+  Avg cosine sim  (dissimilar pairs) : 0.1563
+  Similarity gap  (↑ better)         : 0.2388
+  Analogy hit rate (top-3, ↑ better) : 0.2500  (1/4 correct)
+  Vocabulary coverage (cluster words): 0.8929  (25/28 words present)
+  Avg top-1 neighbour cosine         : 0.6187
+
+========================================================================
+COMPARISON TABLE
+========================================================================
+Metric                        Scratch CBOW  Scratch SGNSLibrary CBOW (Library SGNS (
+------------------------------------------------------------------------
+Sim Gap (↑ better)                0.2028        0.2811        0.4882 ★      0.2388  
+Avg Similar Cosine                0.2343        0.3588        0.4108 ★      0.3951  
+Avg Dissim Cosine                 0.0315        0.0777       -0.0774        0.1563 ★
+Analogy Hit Rate                  0.0000        0.2500 ★      0.0000        0.2500 ★
+Vocab Coverage                    0.8929 ★      0.8929 ★      0.8929 ★      0.8929 ★
+Avg Top-1 Cosine                  0.5384        0.5447        0.6517 ★      0.6187  
+
+========================================================================
+BEST MODEL RECOMMENDATION
+========================================================================
+
+  Composite score = 0.4×SimilarityGap + 0.3×AnalogyHitRate
+                  + 0.2×AvgTop1Cosine + 0.1×VocabCoverage
+
+  Scratch CBOW                      score = 0.2781
+  Scratch SGNS                      score = 0.3857
+  Library CBOW (Gensim)             score = 0.4149  ← BEST
+  Library SGNS (Gensim)             score = 0.3836
+
+  ★ RECOMMENDED MODEL: Library CBOW (Gensim)
+    Composite score : 0.4149
+
+  Interpretation:
+  - Gensim models generally outperform scratch due to optimised C training.
+  - SGNS tends to capture syntactic/semantic structure better than CBOW
+    on small corpora because it trains on individual (target, context) pairs.
+  - Scratch models serve as educational baselines and show the algorithm
+    works correctly even if embeddings are noisier on limited data.
+========================================================================

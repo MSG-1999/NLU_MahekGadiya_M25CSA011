@@ -1,0 +1,14 @@
+2026-03-25 01:33:29,144 [INFO] Fetching [Academic Regulations]: https://iitj.ac.in/office-of-academics/en/academic-regulations
+2026-03-25 01:33:31,000 [INFO]   → HTTP 200  (268,118 bytes)
+2026-03-25 01:33:31,345 [INFO]   Extracted 93,175 words from [Academic Regulations]
+2026-03-25 01:33:31,345 [INFO] Fetching [Office of Academics – Circulars]: https://iitj.ac.in/office-of-academics/en/circulars
+2026-03-25 01:33:32,777 [INFO]   → HTTP 200  (42,914 bytes)
+2026-03-25 01:33:32,835 [INFO]   Extracted 1,840 words from [Office of Academics – Circulars]
+2026-03-25 01:33:32,835 [INFO] Fetching [CSE Department – Projects]: https://www.iitj.ac.in/computer-science-engineering/en/projects
+2026-03-25 01:33:34,138 [INFO]   → HTTP 200  (58,394 bytes)
+2026-03-25 01:33:34,219 [INFO]   Extracted 3,559 words from [CSE Department – Projects]
+2026-03-25 01:33:34,231 [INFO] ============================================================
+2026-03-25 01:33:34,231 [INFO] Total words collected : 98,591
+2026-03-25 01:33:34,231 [INFO] Number of sources     : 3
+2026-03-25 01:33:34,231 [INFO] Output written to     : raw_corpus.txt
+2026-03-25 01:33:34,231 [INFO] ============================================================
