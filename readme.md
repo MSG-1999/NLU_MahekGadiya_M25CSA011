@@ -284,8 +284,8 @@ Total   :  209,527 articles  →  filtered to 40,679  →  balanced to 10,154
                            ▼
 ┌──────────────────────────────────────────────────────────────────────┐
 │  STAGE 4: TRAIN / VALIDATION / TEST SPLIT                            │
-│  70% Train  |  20% Validation  |  10% Test  (stratified)            │
-│  ~7,107 train  |  ~2,031 val  |  ~1,016 test                        │
+│  70% Train  |  20% Validation  |  10% Test  (stratified)             │
+│  ~7,107 train  |  ~2,031 val  |  ~1,016 test                         │
 └──────────────────────────┬───────────────────────────────────────────┘
                            ▼
 ┌──────────────────────────────────────────────────────────────────────┐
@@ -300,18 +300,18 @@ Total   :  209,527 articles  →  filtered to 40,679  →  balanced to 10,154
 │  STAGE 6: MODEL TRAINING & COMPARISON                                │
 │  ① Multinomial Naive Bayes  (MultinomialNB)                          │
 │  ② Logistic Regression      (max_iter=1000, random_state=42)         │
-│  ③ Linear SVM               (LinearSVC, random_state=42)  ← BEST    │
+│  ③ Linear SVM               (LinearSVC, random_state=42)  ← BEST     │
 └──────────────────────────┬───────────────────────────────────────────┘
                            ▼
 ┌──────────────────────────────────────────────────────────────────────┐
 │  STAGE 7: EVALUATION & VISUALIZATION                                 │
 │  Accuracy · Confusion Matrix · Classification Report                 │
-│  ROC Curve (AUC) · Precision/Recall/F1 bar plots                    │
+│  ROC Curve (AUC) · Precision/Recall/F1 bar plots                     │
 └──────────────────────────┬───────────────────────────────────────────┘
                            ▼
 ┌──────────────────────────────────────────────────────────────────────┐
 │  STAGE 8: MODEL SAVING                                               │
-│  linear_svm_model.pkl  +  tfidf_vectorizer.pkl  (via joblib)        │
+│  linear_svm_model.pkl  +  tfidf_vectorizer.pkl  (via joblib)         │
 └──────────────────────────────────────────────────────────────────────┘
 ```
 
